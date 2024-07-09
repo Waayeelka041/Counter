@@ -2,18 +2,18 @@
 import { useState } from "react"
 function Counter(){
 
-   const [counter, setCount]= useState(0)
-// const [ isOn, setIsOn]= useState(false)
+   const [Tiriye, setCount]= useState(0)
 
-    // update the light on
+
+    // update the button increment
     const increment= () => {
-        setCount(counter +1);
+        setCount(Tiriye +1);
        
     }
-    // update the button off
+    // update the button decrement
     const Decrement= () => {
-        setCount(counter -1);
-        if(counter== 0){
+        setCount(Tiriye -1);
+        if(Tiriye== 0){
             setCount(0)
         }
      
@@ -25,7 +25,7 @@ function Counter(){
     return <div className="flex justify-center">
 <div>
     <div counter  className="w-[350px] h-[100px] rounded-full text-center text-4xl font-bold border-2 border-black ml-16 mt-5">
-       <span>{counter} </span>
+    <h1>{Tiriye} </h1>
          </div>
     <button   onClick={increment}  className="bg-orange-600 text-3xl px-3 py-2 m-3 ml-20   rounded">increment</button>
     <button  onClick={Decrement} className="bg-orange-600 text-3xl px-3 py-2 m-3 rounded">Decrement</button>
